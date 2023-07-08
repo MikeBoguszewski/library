@@ -1,0 +1,79 @@
+body {
+    padding: 50px;
+}
+
+
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    height: 300px;
+    width: 300px;
+    box-shadow: gray 0px 1px 4px ;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    font-weight: bold;
+}
+
+.add-button {
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 20px;
+    border: none;
+    box-shadow: gray 0px 1px 4px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book-form {
+    box-shadow: gray 0px 1px 4px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    scale: 0;
+    z-index: 20;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    padding: 20px;
+}
+
+.active {
+    scale: 1;
+}
+
+.remove-button {
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.read-button {
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
