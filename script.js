@@ -8,7 +8,8 @@ const authorInput = document.querySelector('#author')
 const pagesInput = document.querySelector('#pages')
 const readInput = document.querySelector('#read')
 
-function Book(title, author, pages, read) {
+class Book {
+    constructor(title, author, pages, read) {
     this.title = title
     this.author = author
     this.pages = pages
@@ -16,6 +17,7 @@ function Book(title, author, pages, read) {
     this.info = function () {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
     }
+}
 }
 
 function addBookToLibrary (book) {
